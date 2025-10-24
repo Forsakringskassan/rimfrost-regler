@@ -14,17 +14,17 @@ public class FullmaktsControllerApiImpl implements FullmaktsControllerApi
 {
 
    @Override
-   public AlternativesResponse apiAlternativesGet()
+   public OmbudResponse checkOmbud(OmbudRequest ombudRequest)
+   {
+      return new OmbudResponse()
+            .name("Namnet");
+   }
+
+   @Override
+   public AlternativesResponse getAlternatives()
    {
       return new AlternativesResponse()
             .addAlternativesItem(new Alternative().id("1").name("Alt 1"))
             .addAlternativesItem(new Alternative().id("2").name("Alt 2"));
-   }
-
-   @Override
-   public OmbudResponse apiOmbudPut(OmbudRequest ombudRequest)
-   {
-      return new OmbudResponse()
-            .name("Namnet");
    }
 }
