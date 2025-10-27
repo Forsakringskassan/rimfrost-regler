@@ -1,4 +1,4 @@
-package com.example;
+package se.fk.github.rimfrost.regler;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.Path;

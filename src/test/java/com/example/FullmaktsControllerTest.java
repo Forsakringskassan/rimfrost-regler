@@ -1,4 +1,4 @@
-package com.example;
+package se.fk.github.rimfrost.regler;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
